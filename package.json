@@ -1,0 +1,30 @@
+{
+  "name": "ts-dutch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:server": "pnpm tsc -p tsconfig.server.json",
+    "build:client": "cd frontend && pnpm build",
+    "build": "pnpm run build:server && pnpm build:client",
+    "start": "node dist/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/express": "^5.0.3"
+
+  },
+  "type": "module"
+}
