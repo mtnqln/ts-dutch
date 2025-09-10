@@ -3,7 +3,7 @@ import {io} from 'socket.io-client';
 const socket = io();
 
 const form = document.getElementById('form');
-const input = <HTMLInputElement> document.getElementById('input');
+const input = document.getElementById('input') as HTMLInputElement;
 const messages = document.getElementById("messages");
 
 form?.addEventListener('submit',(e)=>{
